@@ -1,17 +1,22 @@
 == Java EE 8: What's New in the Java EE 8 Release
 === David Delabassee
+https://www.youtube.com/watch?v=9VnVZ3j8yDQ[YouTube]
+
 ===== Paul
 This was an update on some of the new JEE 8 specifications, which was released earlier this year.
 A few highlights:
 * JAX-RS 2.1: better support for streams and asynchronous processing.
 * JAX-RS 2.1: http reactive client with fluent api.
 * JAX-RS 2.1: server sent events.
+* JSON-P 1.1: Pointer (identify specific value within a json document)
 * Servlet 4: HTTP/2 support with server push.
 * CDI 2: support for asynchronous events.
 * CDI 2: support for event listener ordering.
 
 == gRPC vs REST: let the battle begin!
 === Alex Borysov & Mykyta Protsenko
+https://www.youtube.com/watch?v=ZDUA5pD50Ok[YouTube]
+
 ===== Paul
 gRPC is a new mechanism (devloped by Google) to communicate between services, that can be implemented as an alternative for using REST api's over HTTP.
 In this talk several scenario's were discussed using gRPC or REST over HTTP.
@@ -20,8 +25,10 @@ Performance is more important than usability, which can be considered a characte
 The use of formal (IDL) contracts with protocol buffers is mandatory.
 It supports a variety of languages and tools can create stub code based on the contracts.
 
-== The Diabolical Developer's Guide to Perfomance Tuning
+== The Diabolical Developer's Guide to Performance Tuning
 === Martijn Verburg
+https://www.youtube.com/watch?v=_y37cbS19JY[YouTube]
+
 ===== Paul
 Martijn Verburg runs a company (together with Kirk Pepperdine) called jClarity.
 jClarity is specialised in analysing and solving performance problems.
@@ -32,6 +39,8 @@ It's very important to *measure* what the problem is, instead of guessing and ma
 
 == Using Kotlin to implement Clean Architecture
 === Lieven Doclo
+https://www.youtube.com/watch?v=0wAvVcrbVK4[YouTube]
+
 ===== Paul
 This talk was divided in 2 parts: A brief description of Clean Architecture ("invented by Robert C. Martin") and a live demo using Kotlin.
 In Clean Architecture it's very important to have several layers (like an union) that communicate with each other in only one direction.
@@ -43,6 +52,8 @@ Kotlin is pretty handy to create those different objects with a feature that is 
 
 == The Java Council
 === Simon Maple, Martijn Verburg, Oleg Šelajev
+https://www.youtube.com/watch?v=Iz6I3udrrkM[YouTube]
+
 *Time for beer!*
 The Java Council is a podcast about Java.
 This was an entertaining session.
@@ -54,6 +65,8 @@ Brian Goetz and Mark Reinhold were also invited on stage to answer some light de
 
 == Highway to Elm
 === Jordane Grenat
+https://www.youtube.com/watch?v=Ofx6LFCYea0[YouTube]
+
 ===== Paul
 We got an introduction to yet another programming language, called "Elm".
 Elm "compiles" to javascript and therefore works on every major browser.
@@ -64,6 +77,8 @@ A language worth looking into I would say.
 
 == Opening Up Java EE: Panel Discussion
 ===  David Delabassee, Mike Croft, Dimitris Andreadis, Ivar Grimstad, Martijn Verburg, Roberto Cortez, Steve Poole
+https://www.youtube.com/watch?v=HRNskFH1MoU[YouTube]
+
 ===== Paul
 This was a very interesting panel discussion.
 JEE (Java Enterprise Edition) is in the process of being moved from Oracle to The Eclipse Foundation.
@@ -73,4 +88,6 @@ Hopefully this change will boost the community to create an even better platform
 
 == The Rise of the Weaponized AI Propaganda Machine
 === Berit Anderson
+https://www.youtube.com/watch?v=PazlKN_FuWQ[YouTube]
+
 ===== Paul

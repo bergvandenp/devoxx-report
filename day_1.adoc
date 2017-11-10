@@ -1,7 +1,6 @@
 == Keynote: Moving java faster
 === Mark Reinhold
-
-https://www.youtube.com/watch?v=x7pkWlost64[YouTube]
+video::x7pkWlost64[youtube]
 
 ===== Paul
 Chief Architect for the JDK (Java Development Kit) Mark Reinhold told us a bit about the new Java9 release, which came out last September.
@@ -15,7 +14,7 @@ He proposed a version syntax like ours (year.month), but that proposal didn't ma
 
 == Keynote: Cern from an IT perspective
 ==== Derek Mathieson
-https://www.youtube.com/watch?v=0QI60O_AjSU[YouTube]
+video::0QI60O_AjSU[youtube]
 
 ===== Paul
 Someone from Cern told us what Cern is all about.
@@ -23,14 +22,18 @@ What the area roughly looks like, how the world famous particle accelerator work
 
 == Keynote: Move slow and Mend Things
 === Kevlin Henney
-https://www.youtube.com/watch?v=1kklyq4XYpw[YouTube]
-
+video::1kklyq4XYpw[youtube]
 ===== Paul
 
+This was a really good talk about what developers do and what the consequences are of those actions.
+When working with a method like Scrum there's a notion of velocity.
+Velocity is *not* the same thing as speed.
+Going fast is not the thing to strive for and can harm the quality of a product.
+Often shortcuts will be taken to reach the goal of a sprint.
 
 == Kotlin for Java Programmers
 === Venkat Subramaniam
-https://www.youtube.com/watch?v=7EVXypZDOos[YouTube]
+video::7EVXypZDOos[youtube]
 
 ===== Paul
 The first parallel session I picked was about Kotlin.
@@ -41,7 +44,7 @@ I like his style though.
 
 == Modular Development with JDK 9
 === Alex Buckley
-https://www.youtube.com/watch?v=rfOjch4p0Po[YouTube]
+video::rfOjch4p0Po[youtube]
 
 ===== Paul
 This was a deep dive into how to use java9 modules.
@@ -53,7 +56,7 @@ The jvm can operate a lot faster, because class resolution becomes a lot easier 
 
 == Plain Functional Programming
 ==== Martin Odersky
-https://www.youtube.com/watch?v=YXDm3WHZT5g[YouTube]
+video::YXDm3WHZT5g[youtube]
 
 ===== Paul
 Martin Odersky is the man behind Scala (programming language which compiles to jvm byte code).
@@ -63,7 +66,7 @@ One of those features is *implicit parameters*, which automatically passes param
 
 == Documentation as Code (explained to my dad)
 ==== Hubert Sablonnière
-https://www.youtube.com/watch?v=ggBv_pZDu0c[YouTube]
+video::ggBv_pZDu0c[youtube]
 
 ===== Paul
 A talk about documentation.
@@ -77,7 +80,7 @@ We already use it to document various Glue modules and I'm using it now to write
 
 == 10 tips to become an awesome Technical Lead
 ==== Bart Blommaerts
-https://www.youtube.com/watch?v=bI4zW8CynDM[YouTube]
+video::yhtK1jQC_4s[youtube]
 
 ===== Paul
 The last talk of the day.
