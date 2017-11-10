@@ -1,6 +1,6 @@
 == Java EE 8: What's New in the Java EE 8 Release
 === David Delabassee
-https://www.youtube.com/watch?v=9VnVZ3j8yDQ[YouTube]
+video::9VnVZ3j8yDQ[youtube]
 
 ===== Paul
 This was an update on some of the new JEE 8 specifications, which was released earlier this year.
@@ -15,7 +15,7 @@ A few highlights:
 
 == gRPC vs REST: let the battle begin!
 === Alex Borysov & Mykyta Protsenko
-https://www.youtube.com/watch?v=ZDUA5pD50Ok[YouTube]
+video::ZDUA5pD50Ok[youtube]
 
 ===== Paul
 gRPC is a new mechanism (devloped by Google) to communicate between services, that can be implemented as an alternative for using REST api's over HTTP.
@@ -27,7 +27,7 @@ It supports a variety of languages and tools can create stub code based on the c
 
 == The Diabolical Developer's Guide to Performance Tuning
 === Martijn Verburg
-https://www.youtube.com/watch?v=_y37cbS19JY[YouTube]
+video::_y37cbS19JY[youtube]
 
 ===== Paul
 Martijn Verburg runs a company (together with Kirk Pepperdine) called jClarity.
@@ -39,7 +39,7 @@ It's very important to *measure* what the problem is, instead of guessing and ma
 
 == Using Kotlin to implement Clean Architecture
 === Lieven Doclo
-https://www.youtube.com/watch?v=0wAvVcrbVK4[YouTube]
+video::0wAvVcrbVK4[youtube]
 
 ===== Paul
 This talk was divided in 2 parts: A brief description of Clean Architecture ("invented by Robert C. Martin") and a live demo using Kotlin.
@@ -52,7 +52,7 @@ Kotlin is pretty handy to create those different objects with a feature that is 
 
 == The Java Council
 === Simon Maple, Martijn Verburg, Oleg Šelajev
-https://www.youtube.com/watch?v=Iz6I3udrrkM[YouTube]
+video::Iz6I3udrrkM[youtube]
 
 *Time for beer!*
 The Java Council is a podcast about Java.
@@ -65,7 +65,7 @@ Brian Goetz and Mark Reinhold were also invited on stage to answer some light de
 
 == Highway to Elm
 === Jordane Grenat
-https://www.youtube.com/watch?v=Ofx6LFCYea0[YouTube]
+video::Ofx6LFCYea0[youtube]
 
 ===== Paul
 We got an introduction to yet another programming language, called "Elm".
@@ -77,7 +77,7 @@ A language worth looking into I would say.
 
 == Opening Up Java EE: Panel Discussion
 ===  David Delabassee, Mike Croft, Dimitris Andreadis, Ivar Grimstad, Martijn Verburg, Roberto Cortez, Steve Poole
-https://www.youtube.com/watch?v=HRNskFH1MoU[YouTube]
+video::HRNskFH1MoU[youtube]
 
 ===== Paul
 This was a very interesting panel discussion.
@@ -88,6 +88,18 @@ Hopefully this change will boost the community to create an even better platform
 
 == The Rise of the Weaponized AI Propaganda Machine
 === Berit Anderson
-https://www.youtube.com/watch?v=PazlKN_FuWQ[YouTube]
+video::PazlKN_FuWQ[youtube]
 
 ===== Paul
+
+This was a call to action to do something against a worldwide network of "mind controlling" bots.
+Those bots are believed to have greatly influenced the last U.S. presidential election and the Brexit referendum.
+They use technology that is built over the last decade in Silicon Valley.
+Facebook and Twitter were being flooded with targeted advertisements with the purpose to create chaos and put people against each other.
+Berit also investigated why mr. Poetin would be involved in influencing the U.S. election and she made some good points explaining what she found out.
+
+This network (still) is a major thread against western democracy.
+The computational propaganda is so sophisticated that it is already able to fake a person's appearance on video.
+That raises a lot of questions about *truth* and *free will*.
+
+_Definitely worth the watch._
