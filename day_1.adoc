@@ -1,5 +1,8 @@
 == Keynote: Moving java faster
-==== Mark Reinhold
+=== Mark Reinhold
+
+https://www.youtube.com/watch?v=x7pkWlost64[YouTube]
+
 ===== Paul
 Chief Architect for the JDK (Java Development Kit) Mark Reinhold told us a bit about the new Java9 release, which came out last September.
 Mostly this talk was about the future after java9.
@@ -11,12 +14,24 @@ The next release (in march) will be version 10, the next 11 and so on.
 He proposed a version syntax like ours (year.month), but that proposal didn't make it.
 
 == Keynote: Cern from an IT perspective
-==== <todo>: speaker name
+==== Derek Mathieson
+https://www.youtube.com/watch?v=0QI60O_AjSU[YouTube]
+
 ===== Paul
 Someone from Cern told us what Cern is all about.
 What the area roughly looks like, how the world famous particle accelerator works and which parts are developed using Java.
 
+== Keynote: Move slow and Mend Things
+=== Kevlin Henney
+https://www.youtube.com/watch?v=1kklyq4XYpw[YouTube]
+
+===== Paul
+
+
 == Kotlin for Java Programmers
+=== Venkat Subramaniam
+https://www.youtube.com/watch?v=7EVXypZDOos[YouTube]
+
 ===== Paul
 The first parallel session I picked was about Kotlin.
 Venkat brought us up-to-speed with the most interesting features that this new programming language offers.
@@ -25,7 +40,9 @@ With Venkat presenting we had to keep focussed, because he tells A LOT in a shor
 I like his style though.
 
 == Modular Development with JDK 9
-==== Alex Buckley
+=== Alex Buckley
+https://www.youtube.com/watch?v=rfOjch4p0Po[YouTube]
+
 ===== Paul
 This was a deep dive into how to use java9 modules.
 With modules we can create clear boundaries between api's that we want to expose and code that may only be used by the module itself.
@@ -36,6 +53,8 @@ The jvm can operate a lot faster, because class resolution becomes a lot easier 
 
 == Plain Functional Programming
 ==== Martin Odersky
+https://www.youtube.com/watch?v=YXDm3WHZT5g[YouTube]
+
 ===== Paul
 Martin Odersky is the man behind Scala (programming language which compiles to jvm byte code).
 He told us about functional programming in general in what common pitfalls are.
@@ -43,7 +62,9 @@ He also gave a demo about some new features that Scala 3 brings to the table.
 One of those features is *implicit parameters*, which automatically passes parameters in methods as needed.
 
 == Documentation as Code (explained to my dad)
-==== <todo>: speaker name
+==== Hubert Sablonnière
+https://www.youtube.com/watch?v=ggBv_pZDu0c[YouTube]
+
 ===== Paul
 A talk about documentation.
 A nice story about his own dad writing medical articles using various tools and collaborating with his editor.
@@ -55,7 +76,9 @@ With asciidoctor you can create various types of output (pdf, html, etc) automat
 We already use it to document various Glue modules and I'm using it now to write this report.
 
 == 10 tips to become an awesome Technical Lead
-==== <todo>: speaker name
+==== Bart Blommaerts
+https://www.youtube.com/watch?v=bI4zW8CynDM[YouTube]
+
 ===== Paul
 The last talk of the day.
 This talk was about culture and roles within a organisation.

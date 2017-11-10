@@ -70,3 +70,7 @@ JEE (Java Enterprise Edition) is in the process of being moved from Oracle to Th
 That means that Oracle no longer decides about the future of JEE, but the community is.
 No one knows were this will lead to yet, but it's struggling with a bad reputation now.
 Hopefully this change will boost the community to create an even better platform.
+
+== The Rise of the Weaponized AI Propaganda Machine
+=== Berit Anderson
+===== Paul
