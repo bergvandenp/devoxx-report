@@ -1,0 +1,73 @@
+== Day 2
+== Java EE 8: What's New in the Java EE 8 Release
+=== David Delabassee
+===== Paul
+This was an update on some of the new JEE 8 specifications, which was released earlier this year.
+A few highlights:
+* JAX-RS 2.1: better support for streams and asynchronous processing.
+* JAX-RS 2.1: http reactive client with fluent api.
+* JAX-RS 2.1: server sent events.
+* Servlet 4: HTTP/2 support with server push.
+* CDI 2: support for asynchronous events.
+* CDI 2: support for event listener ordering.
+
+== gRPC vs REST: let the battle begin!
+=== Alex Borysov & Mykyta Protsenko
+===== Paul
+gRPC is a new mechanism (devloped by Google) to communicate between services, that can be implemented as an alternative for using REST api's over HTTP.
+In this talk several scenario's were discussed using gRPC or REST over HTTP.
+gRPC is built with performance being a top priority.
+Performance is more important than usability, which can be considered a characteristic of REST.
+The use of formal (IDL) contracts with protocol buffers is mandatory.
+It supports a variety of languages and tools can create stub code based on the contracts.
+
+== The Diabolical Developer's Guide to Perfomance Tuning
+=== Martijn Verburg
+===== Paul
+Martijn Verburg runs a company (together with Kirk Pepperdine) called jClarity.
+jClarity is specialised in analysing and solving performance problems.
+They work with a simple method to give guidance about where to look for the problem.
+A problem can occur at multiple levels: Operating system (including virtualisation), jvm, application.
+He gave some pointers on where to start your investigation and how tools can help  with that.
+It's very important to *measure* what the problem is, instead of guessing and maybe fixing something that is not the actual problem at hand.
+
+== Using Kotlin to implement Clean Architecture
+=== Lieven Doclo
+===== Paul
+This talk was divided in 2 parts: A brief description of Clean Architecture ("invented by Robert C. Martin") and a live demo using Kotlin.
+In Clean Architecture it's very important to have several layers (like an union) that communicate with each other in only one direction.
+A layer can only communicate with it's direct neighbour.
+To make this possible we need to create different models in various layers.
+For instance: The outer presentation layer doesn't "know" domain objects, but communicates using presentation objects.
+Kotlin is pretty handy to create those different objects with a feature that is called "extension methods".
+
+
+== The Java Council
+=== Simon Maple, Martijn Verburg, Oleg Šelajev
+*Time for beer!*
+The Java Council is a podcast about Java.
+This was an entertaining session.
+First they showed the results of a survey that Zeroturnaround held across developers and made a couple of jokes, of course.
+They also invented JDuchess to the floor which is celebrating it's 10 years anniversary.
+JDuchess is a JUG (Java User Group) founded in The Netherlands.
+The goal of this JUG is to support women in the software development industry.
+Brian Goetz and Mark Reinhold were also invited on stage to answer some light developer questions.
+
+== Highway to Elm
+=== Jordane Grenat
+===== Paul
+We got an introduction to yet another programming language, called "Elm".
+Elm "compiles" to javascript and therefore works on every major browser.
+It's a typed language and it's killer feature is *No runtime exceptions*.
+Error message during compilation / development are very clear and also come with suggestions about how to fix the problem.
+The session was divided in two parts: explanation of the syntax / operations and a live coding demo.
+A language worth looking into I would say.
+
+== Opening Up Java EE: Panel Discussion
+===  David Delabassee, Mike Croft, Dimitris Andreadis, Ivar Grimstad, Martijn Verburg, Roberto Cortez, Steve Poole
+===== Paul
+This was a very interesting panel discussion.
+JEE (Java Enterprise Edition) is in the process of being moved from Oracle to The Eclipse Foundation.
+That means that Oracle no longer decides about the future of JEE, but the community is.
+No one knows were this will lead to yet, but it's struggling with a bad reputation now.
+Hopefully this change will boost the community to create an even better platform.

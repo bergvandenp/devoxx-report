@@ -1,0 +1,44 @@
+== Day 3
+The last day of the conference.
+The exhibition floor was already cleared and the conference ended at 13:45.
+
+== How to build an event-driven, dynamically re-configurable micro-services platform
+This talk was about how a fin-tech company called "The Glue" built a system using micro-services on top of a datagrid.
+The presenter told about:
+
+* how they built auto-healing and backup services (by redeploying failing services on other machines).
+* how the entire system is event-driven and backup of events, ensuring "one time processing".
+
+
+== Blue Team Security. Actual Security work for Actual Developers
+We're making the same mistakes over and over again.
+The most likely attacker is some "script kiddie", not 'hacker dude".
+What's the most risky thing that could happen?
+Impact, Possibility and Ease of exploitation.
+Don't have a database in clear text.
+Start by drawing a thread model.
+There's no defencee against "a stroke of genius" and "The 0-day horror".
+Have a disaster recovery plan in place.
+
+* validate user inputs
+** whitelisting input against a list of allowed characters
+** boundery checking (data and number length)
+** character escaping
+** Check keys uniqueness and it actually exists
+
+Take away: Start small. Rome wasn't built in one day.
+
+== An introduction to JVM performance
+Every jvm does things different. This talk is about the hotspot jvm.
+Javac doesn't do a lot of optimisation.
+Optimisation happens at runtime in an adaptive manner.
+The jvm finds hotspots (code that runs a lot) and optimises those accordingly.
+Performance can be slow at first, because it needs to learn by profiling.
+
+*Call sites* are places in the program that perform a method call
+Every method call is virtual using virtual method tables.
+Jvm optimisation can remove a virtual method call.
+If you have 3 implementations of a class, a method call can be much more expensive.
+Keep methods small, so runtime *inlining* (uber optimisation) is possible.
+Write clearly structured programs using types to make the life of the compiler easier.
+There's a great framework for benchmarking called JMH.

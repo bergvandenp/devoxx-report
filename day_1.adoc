@@ -1,0 +1,73 @@
+= Devoxx 2017
+
+== Day 1
+
+== Keynote: Moving java faster
+==== Mark Reinhold
+===== Paul
+Chief Architect for the JDK (Java Development Kit) Mark Reinhold told us a bit about the new Java9 release, which came out last September.
+Mostly this talk was about the future after java9.
+Particularly release dates and versioning.
+From now on a new version of Java SE (Standard edition) will be released every 6 months.
+Up until now releases were postponed until big features were ready to ship.
+Now the release will take place and will contain what's done at that moment.
+The next release (in march) will be version 10, the next 11 and so on.
+He proposed a version syntax like ours (year.month), but that proposal didn't make it.
+
+== Keynote: Cern from an IT perspective
+==== <todo>: speaker name
+===== Paul
+Someone from Cern told us what Cern is all about.
+What the area roughly looks like, how the world famous particle accelerator works and which parts are developed using Java.
+
+== Kotlin for Java Programmers
+===== Paul
+The first parallel session I picked was about Kotlin.
+Venkat brought us up-to-speed with the most interesting features that this new programming language offers.
+It's a language that compiles to jvm byte code and it took the best parts from languages like Java, Groovy, Scala and Swift.
+With Venkat presenting we had to keep focussed, because he tells A LOT in a short amount of time.
+I like his style though.
+
+== Modular Development with JDK 9
+==== Alex Buckley
+===== Paul
+This was a deep dive into how to use java9 modules.
+With modules we can create clear boundaries between api's that we want to expose and code that may only be used by the module itself.
+With a `module-info.java` you can define which classes / packages to export and what the dependencies of the module are.
+A system can be moved to modules step-by-step, so no big bang implementation is required.
+The usage of classes between modules are checked by the compiler AND the runtime jvm.
+The jvm can operate a lot faster, because class resolution becomes a lot easier with a module dependency tree.
+
+== Plain Functional Programming
+==== Martin Odersky
+===== Paul
+Martin Odersky is the man behind Scala (programming language which compiles to jvm byte code).
+He told us about functional programming in general in what common pitfalls are.
+He also gave a demo about some new features that Scala 3 brings to the table.
+One of those features is *implicit parameters*, which automatically passes parameters in methods as needed.
+
+== Documentation as Code (explained to my dad)
+==== <todo>: speaker name
+===== Paul
+A talk about documentation.
+A nice story about his own dad writing medical articles using various tools and collaborating with his editor.
+He made a case for using ascii-doc.
+Ascii-doc documents are just plain text files (comparable to markdown) with very easy-to-use, but rich markup symbols.
+Custom labels can be used to create a set of rules that everyone involved with the document(s) uses.
+For instance: the writer, the editor and the publisher agree on a tag to indicate information boxes in a book.
+With asciidoctor you can create various types of output (pdf, html, etc) automatically.
+We already use it to document various Glue modules and I'm using it now to write this report.
+
+== 10 tips to become an awesome Technical Lead
+==== <todo>: speaker name
+===== Paul
+The last talk of the day.
+This talk was about culture and roles within a organisation.
+We got an overview of what the roles / activities of a technical lead are.
+With every role description came some tips on what to pay attention on.
+A few examples:
+
+* create a diverse team, with minds that think differently.
+* create a comfortable environment for an interviewee during an interview.
+* Try to aim for consensus during discussions, but make firm decisions when consensus cannot be achieved.
+* Talk to customers
