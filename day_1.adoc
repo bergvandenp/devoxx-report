@@ -12,6 +12,11 @@ Now the release will take place and will contain what's done at that moment.
 The next release (in march) will be version 10, the next 11 and so on.
 He proposed a version syntax like ours (year.month), but that proposal didn't make it.
 
+===== Hendrik
+Java is going to have two releases per year. Most probably the next release will be 10, in March 2018. Followed by 11 in September. The 11 release will be so-called long term support (LTS) release, that will be supported for (at least) 3 years.
+Jigsaw (Java 9 modules) does not do versioning. Versioning is something you do at the jar-level, and is already done perfectly fine by tools like Maven and Gradle. "That's a solved problem", to quote Mark.
+Apparently the joke's old, but I had not seen it before: Oracle's chief Java architect, clicking away the legal notice, muttering: "don't believe a word I've said". haha.
+
 == Keynote: Cern from an IT perspective
 ==== Derek Mathieson
 video::0QI60O_AjSU[youtube]
@@ -19,6 +24,9 @@ video::0QI60O_AjSU[youtube]
 ===== Paul
 Someone from Cern told us what Cern is all about.
 What the area roughly looks like, how the world famous particle accelerator works and which parts are developed using Java.
+===== Hendrik
+Mind blowing presentation about cathedral-sized particle scanners and server rooms that process huge amounts of data. Java is at the heart of it.
+CERN is a very open organization that welcomes visitors. 4500 tours are done each year!
 
 == Keynote: Move slow and Mend Things
 === Kevlin Henney
@@ -31,6 +39,10 @@ Velocity is *not* the same thing as speed.
 Going fast is not the thing to strive for and can harm the quality of a product.
 Often shortcuts will be taken to reach the goal of a sprint.
 
+===== Hendrik
+Kevlin Henney gave a talk about a couple of misconceptions with respect to Agile development and velocity. One of the best the remarks is, that is very bad to go at a very high speed into the wrong direction. It is better to slow down and steadily go in the right direction. Sometimes it can be good thing to "Go Fast and Break Things", as Facebook is stating, but in most situations, the very opposite is true.
+Kevin is a good speaker, that has good quotes, of which quite a few from himself :-)
+
 == Kotlin for Java Programmers
 === Venkat Subramaniam
 video::7EVXypZDOos[youtube]
@@ -41,6 +53,9 @@ Venkat brought us up-to-speed with the most interesting features that this new p
 It's a language that compiles to jvm byte code and it took the best parts from languages like Java, Groovy, Scala and Swift.
 With Venkat presenting we had to keep focussed, because he tells A LOT in a short amount of time.
 I like his style though.
+
+===== Hendrik
+Speaking in front of a large audience is very difficult, but speaking at the rate of Venkat adds another dimension. The concepts of Kotlin where not new to me, so I could follow along, but clicking through some tutorial on the internet may be better. Venkat is quite funny, though.
 
 == Modular Development with JDK 9
 === Alex Buckley
@@ -54,6 +69,15 @@ A system can be moved to modules step-by-step, so no big bang implementation is 
 The usage of classes between modules are checked by the compiler AND the runtime jvm.
 The jvm can operate a lot faster, because class resolution becomes a lot easier with a module dependency tree.
 
+== Get silly with serverless: a fun introduction to the newest way to run your code
+==== Guillaume Laforge && Bret McGowen (Google employees)
+video::7NjRqMYH11s[youtube]
+
+===== Hendrik
+Before this talk I was not sure what serverless actually was, so I was curious. Basically serverless boils down to: not having to worry about scalability, load balancing, OS updates and things like that. That is handed by the platform (Google Cloud, in this case). The new concept Google introduces is "Function as a Service" (FaaS). Your Faas code, is billed at sub-second rates, so when your function is not running, you are not being billed for that time. This is different from other Google services, like e.g. storage. This opens up a lot of possibilities. You can very easily deploy your Node.js code (Java is coming later).
+So, based on this talk, I'm convinced that serverless is good for quick proof of concepts, but once you go to production, servers are more cost effective.
+
+
 == Plain Functional Programming
 ==== Martin Odersky
 video::YXDm3WHZT5g[youtube]
@@ -63,6 +87,16 @@ Martin Odersky is the man behind Scala (programming language which compiles to j
 He told us about functional programming in general in what common pitfalls are.
 He also gave a demo about some new features that Scala 3 brings to the table.
 One of those features is *implicit parameters*, which automatically passes parameters in methods as needed.
+
+===== Hendrik
+The title of this presentation is somewhat misleading. You'd expect some basic stuff, instead he went into the deep quite fast, touching Monads and the concept of Kleisli's. In Scala 3.0 Kleisli's are possible with the new `implicit` keyword. What it boils down to, is that for code where you have to pass a large number of arguments, that propagate through the rest of the code, you can solve this by adding the `implicit` keyword. The variables are automatically available to rest of the code. Note that the compiler does not solve this creating a global variable, or something like that. Powerful stuff.
+
+== Modules in One Lesson
+==== Mark Reinhold
+video::rFhhLXcOBsk[youtube]
+
+===== Hendrik
+I think it's very cool that Oracle's chief architect, takes the time to explain how Java 9 modules work (at a nice pace). It's not very complicated. Java 9 modules offer you far more control over access to code that you want keep private, in some part of your code. You must be explicit in `exports` and `requires`. Both are checked at both compile time and run time.
 
 == Documentation as Code (explained to my dad)
 ==== Hubert Sablonnière
@@ -93,3 +127,7 @@ A few examples:
 * create a comfortable environment for an interviewee during an interview.
 * Try to aim for consensus during discussions, but make firm decisions when consensus cannot be achieved.
 * Talk to customers
+
+===== Hendrik
+What exactly is a tech lead? In Bart's world it is someone who is "up for the job". A tech lead is not some kind of manager, that's my conclusion based on his statement: "make sure you stay technical". But it makes you wonder...
+

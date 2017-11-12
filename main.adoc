@@ -1,5 +1,7 @@
 = Devoxx 2017
 
+Below you'll find an overview of the sessions Hendrik and I visited. All sessions have been recorded, and links to YouTube are available below. Of course there were more sessions than we could visit; see the (https://cfp.devoxx.be/2017/byday/wed)[session overview].
+
 == Day 1
 
 include::day_1.adoc[]

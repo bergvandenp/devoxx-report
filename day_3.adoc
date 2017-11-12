@@ -11,6 +11,8 @@ The presenter told about:
 * how they built auto-healing and backup services (by redeploying failing services on other machines).
 * how the entire system is event-driven and backup of events, ensuring "one time processing".
 
+===== Hendrik
+This was one of the best presentations of the conference. The presenter works for a company called The Glue. They build a auto-reconfiguring Kubernetes, Dockerized, Apache Ignite grid that seems to have very high availability and performance. On top of that, it is transaction-safe as well.
 
 == Blue Team Security. Actual Security work for Actual Developers
 === Siren Hofvander
@@ -33,6 +35,19 @@ Have a disaster recovery plan in place.s
 
 Take away: Start small. Rome wasn't built in one day.
 
+== Safely Shoot Yourself in the Foot with Java 9
+==== Heinz Kabutz
+video:uk08-H_GtwI[youtube]
+
+===== Hendrik
+Heinz Kabutz likes to break things, especially those things that Oracle claims to have fixed.
+With the introduction of Java 9, they have tried to minimize the use of Unsafe, they partly succeeded. With some runtime hacking Heinz Kabutz show how you can still make `System.out.println("Hello!")` print out `cheers`. Stuff you don't want to do in production ;-)
+
+JVisualVM is gone from Java 8, but Netbean's open source Visual VM is (of course) still available on GitHub.
+
+Nice to know: HashSet in Java 8 is not sorted. But is is, kind of, up until 56000 items. The hashing algorithm was simplified as a prevention to denial of service attacks.
+In case you like puzzles like this, you should definitely subscribe to Heinz' mailing list.
+
 == An introduction to JVM performance
 === Rafael Winterhalter
 video::hjpzLXoUu1Y[youtube]
@@ -50,3 +65,7 @@ If you have 3 implementations of a class, a method call can be much more expensi
 Keep methods small, so runtime *inlining* (uber optimisation) is possible.
 Write clearly structured programs using types to make the life of the compiler easier.
 There's a great framework for benchmarking called JMH.
+
+===== Hendrik
+Very nice look into how the JVM HotSpot compiler works and optimizes code, based on profiling. The cool thing of the JVM is that is constantly optimizes code based on usage of an application. This may change over time. That is a big difference with, for example C++ code, where the programmer has to do the compiler tuning at build time, based on some profile. In case the profile changes, you'll have to manually change the parameters, rebuild and restart. The JVM gives you all this for free. It also explains why Java code many a time outperforms C code.
+

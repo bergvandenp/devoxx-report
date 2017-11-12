@@ -13,6 +13,9 @@ A few highlights:
 * CDI 2: support for asynchronous events.
 * CDI 2: support for event listener ordering.
 
+===== Hendrik
+The title says it all: an overview of the things that are new. The new JAX-RS is very promising, it adds support for HTTP/2 and adds a very powerful `rx()` operation, for doing things asynchronously. JSON-P adds support for CRUD operations on JSON data structures without the need to parse everything first. The CDI library has been split up in different parts, so that is now quite simple to do CDI only for Java SE.
+
 == gRPC vs REST: let the battle begin!
 === Alex Borysov & Mykyta Protsenko
 video::ZDUA5pD50Ok[youtube]
@@ -24,6 +27,11 @@ gRPC is built with performance being a top priority.
 Performance is more important than usability, which can be considered a characteristic of REST.
 The use of formal (IDL) contracts with protocol buffers is mandatory.
 It supports a variety of languages and tools can create stub code based on the contracts.
+
+===== Hendrik
+Google's RPC is a mature piece of software, because it has been open-sourced only recently after years of production withing Google. It uses protocol buffers over a formal protocol that you have to specify using the proto language. Basically it is some form of Interface Definition Language (IDL) known from stuff like CORBA. The proto compiler generates language bindings (Stubs) from the proto file, which you can then use in your software (in pieces that you want to connect with). 
+The presenters did a shootout of both an implementation in classic REST and gRPC, with web app for guessing Pokemons and big data buzz words. Unfortunately, the gRPC implementation had some issue, causing it to crash. Due to all the hectic involved, it did not become apparent what the problem was. It was a perfect illustration of argument for REST: it is more simple and easier to track problems in.
+O, BTW, REST is not JSON over HTTP ;-)
 
 == The Diabolical Developer's Guide to Performance Tuning
 === Martijn Verburg
@@ -37,6 +45,17 @@ A problem can occur at multiple levels: Operating system (including virtualisati
 He gave some pointers on where to start your investigation and how tools can help  with that.
 It's very important to *measure* what the problem is, instead of guessing and maybe fixing something that is not the actual problem at hand.
 
+== Globally Distributed Software Engineering - The Good, the Bad and the Ugly
+==== Rini van Solingen
+video:b9mrVHVC7WQ[youtube]
+
+===== Hendrik
+Rini van Solingen is a part-time professor at Delft University doing research on distributed software engineering. It showed from his whiteboard presentation: very clear. 
+A few things stood out:
+* research has shown that distributed software engineering starts at 50 meters! 
+* if distributed development fails, culture is often blamed, in stead of the real problem. Company culture, professional culture and team culture are far more important (and influenceable!) than local culture.
+* long learning curves (of on average 1.5 years) often collide with attrition. 
+
 == Using Kotlin to implement Clean Architecture
 === Lieven Doclo
 video::0wAvVcrbVK4[youtube]
@@ -49,6 +68,8 @@ To make this possible we need to create different models in various layers.
 For instance: The outer presentation layer doesn't "know" domain objects, but communicates using presentation objects.
 Kotlin is pretty handy to create those different objects with a feature that is called "extension methods".
 
+===== Hendrik
+"Clean architecture" is somewhat of a hollow frase, especially with some not too clean diagrams. Anyway, the trick is to use "extension methods", where you'd normally have used static methods to translate between architectural layers.
 
 == The Java Council
 === Simon Maple, Martijn Verburg, Oleg Šelajev
@@ -63,6 +84,9 @@ JDuchess is a JUG (Java User Group) founded in The Netherlands.
 The goal of this JUG is to support women in the software development industry.
 Brian Goetz and Mark Reinhold were also invited on stage to answer some light developer questions.
 
+===== Hendrik
+Funny session with free beers ;-)
+
 == Highway to Elm
 === Jordane Grenat
 video::Ofx6LFCYea0[youtube]
@@ -75,6 +99,9 @@ Error message during compilation / development are very clear and also come with
 The session was divided in two parts: explanation of the syntax / operations and a live coding demo.
 A language worth looking into I would say.
 
+===== Hendrik
+Elm compiles Elm to JavaScript for creating code without exceptions. It is also a light-weight web framework, that makes use of sending messages to a model (some kind of state machine). You can communicate with existing JavaScript code on your page, via events (that you subscribe to beforehand).
+
 == Opening Up Java EE: Panel Discussion
 ===  David Delabassee, Mike Croft, Dimitris Andreadis, Ivar Grimstad, Martijn Verburg, Roberto Cortez, Steve Poole
 video::HRNskFH1MoU[youtube]
@@ -85,6 +112,9 @@ JEE (Java Enterprise Edition) is in the process of being moved from Oracle to Th
 That means that Oracle no longer decides about the future of JEE, but the community is.
 No one knows were this will lead to yet, but it's struggling with a bad reputation now.
 Hopefully this change will boost the community to create an even better platform.
+
+===== Hendrik
+Quite an insightful session about new EE4J Eclipse project, the new open sourced Java EE. After an initial EE4J 1.0 release, which will be identical to Java EE 8, it is the intention to deliver releases at a higher interval than has been done before. The big question is: isn't just too late for EE? Lots of companies have been building their own solutions based on existing (reference) implementations.
 
 == The Rise of the Weaponized AI Propaganda Machine
 === Berit Anderson
@@ -103,3 +133,6 @@ The computational propaganda is so sophisticated that it is already able to fake
 That raises a lot of questions about *truth* and *free will*.
 
 _Definitely worth the watch._
+
+===== Hendrik
+Berit Anderson from (https://scout.ai)[Scout] has done research on the use of human-controlled bots to influence people on Facebook to change their opinion. This has been done by both the Trump and Clinton campaigns, where Trump outnumbered Clinton by 5:1. The Russians are also involved in this new kind of "political marketing". They have probably been successful in influencing Brexit as well...
