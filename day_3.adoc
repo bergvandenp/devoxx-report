@@ -3,6 +3,7 @@ The exhibition floor was already cleared and the conference ended at 13:45.
 
 == How to build an event-driven, dynamically re-configurable micro-services platform
 === Sven Beauprez
+video::1D8hyLWMtfM[youtube]
 ===== Paul
 This talk was about how a fin-tech company called "The Glue" built a system using micro-services on top of a datagrid.
 The presenter told about:
@@ -13,6 +14,7 @@ The presenter told about:
 
 == Blue Team Security. Actual Security work for Actual Developers
 === Siren Hofvander
+video::yaLq88OjfoQ[youtube]
 ===== Paul
 We're making the same mistakes over and over again.
 The most likely attacker is some "script kiddie", not 'hacker dude".
@@ -21,7 +23,7 @@ Impact, Possibility and Ease of exploitation.
 Don't have a database in clear text.
 Start by drawing a thread model.
 There's no defencee against "a stroke of genius" and "The 0-day horror".
-Have a disaster recovery plan in place.
+Have a disaster recovery plan in place.s
 
 * validate user inputs
 ** whitelisting input against a list of allowed characters
@@ -33,6 +35,7 @@ Take away: Start small. Rome wasn't built in one day.
 
 == An introduction to JVM performance
 === Rafael Winterhalter
+video::hjpzLXoUu1Y[youtube]
 ===== Paul
 Every jvm does things different. This talk is about the hotspot jvm.
 Javac doesn't do a lot of optimisation.
